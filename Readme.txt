@@ -1,5 +1,5 @@
 
-  Enhanced Command Prompt Portable | v1.2 | 3/1/2010 
+  Enhanced Command Prompt Portable | v1.2a | 5/1/2011 
   (Scripts: CommandPrompt.bat, DirC.bat, ListC.bat)
   
   by wanderSick@C7PE
@@ -9,6 +9,16 @@
   ________________________________________________________________
   
   Updates:
+
+  #  2011/01/05 - 1.2a
+
+  - Fixes an issue where the last character in PATH is stripped
+
+  #  2010/01/03 - 1.2
+
+  - Coding consolidation
+
+  #  2009/09/21 - 1.1
 
   - Since Version 1.1 dupe removal is on by default, as script now
     uses another dupe removal algorithm which is much faster. Now
