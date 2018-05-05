@@ -1,1 +1,0 @@
-To run ECPP in other languages, replace the English bat files with the Chinese ones
