@@ -1,5 +1,5 @@
 
-  Enhanced Command Prompt Portable | v1.1 | 21/9/2009 
+  Enhanced Command Prompt Portable | v1.2 | 3/1/2010 
   (Scripts: CommandPrompt.bat, DirC.bat, ListC.bat)
   
   by wanderSick@C7PE
