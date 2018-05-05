@@ -1,11 +1,11 @@
 @echo off > "%temp%\dupeRemoval.tmp"
 rem ************************
-rem Name: Enhanced Command Prompt Portable
-rem Version: 1.1
+rem Name: Enhanced Command Prompt Portable (ECPP)
+rem Version: 1.2
 rem Scripts: *CommandPrompt.bat*, DirC.bat, ListC.bat
 rem Creation Date: 27/7/2009
-rem Last Modified: 21/9/2009
-rem Author: wanderSick@C7PE 
+rem Last Modified: 21/9/2009,3/1/2010
+rem Author: wandersick
 rem Email: wander.sic.k@gmail.com
 rem Web: wandersick.blogspot.com
 rem Supported OS: Windows 2000 or later
@@ -124,7 +124,9 @@ goto end
 
 color 07
 prompt $p$g
-title Command Prompt (Portable)
+title Enhanced Command Prompt Portable
+
+REM TIP: to reload, enter 'commandprompt'
 
 REM check if script is first run or not
 REM if script is run by again user entering "CommandPrompt", need to go up one folder
@@ -169,8 +171,8 @@ REM would be more convenient to start here than root
 
 cd Exe
 echo.
-echo # Default Cmds: Windows-native (ref: help), Welcome msg (commandprompt), etc.
-echo.
+REM echo # Default Cmds: Windows-native (ref: help), Welcome msg (commandprompt), etc.
+REM echo.
 
 REM enable delayed expansion in order to append to the same !variable! in a for loop
 
@@ -185,37 +187,7 @@ REM ------ dupe removal ------
   
 REM 1st version: FAST BUT NO DUPE REMOVAL. detecting and appending folders to PATH
 
-REM for /d /r %%i in (*) do set path=!path!;%%i
-  
-REM 2nd version: REMOVE DUPES (SLOW)
-
-REM detecting and appending folders to PATH, removing dupes (slower startup time!)
-REM concept: computing.net/answers/programming/remove-duplicate-lines-in-pure-bat/15777.html
-REM
-REM remove \ from each line of PATH
-REM for /f "usebackq delims=*" %%i in (`dir /s /b *.exe *.bat *.cmd *.vbs`) do (
-REM find "%%~dpi" < "%temp%\dupeRemoval.tmp" > nul
-REM if errorlevel 1 (set PATH=!PATH:~0,-1!;%%~dpi) & (echo %%~dpi >> "%temp%\dupeRemoval.tmp")
-REM )
-REM
-
-REM 3rd version: REMOVE DUPES (FAST)
-
-type nul>"%temp%\dupeRemoval.tmp"
-for /f "tokens=* usebackq" %%i in (`dir /s /b *.exe *.bat *.cmd *.vbs`) do set record=%%~dpi&call :output 
-goto dupeRemoved
-
-:output
-if not defined prev_rec goto write
-if "%record%"=="%prev_rec%" goto :EOF
-
-:write
-echo %record%>>"%temp%\dupeRemoval.tmp"
-set prev_rec=%record%
-goto :EOF
-
-:dupeRemoved
-for /f "Tokens=* usebackq" %%i in (`type "%temp%\dupeRemoval.tmp"`) do set PATH=!PATH:~0,-1!;%%~dpi
+for /d /r %%i in (*) do set path=!path!;%%i
 
 REM export the appended PATH to a temp file to avoid PATH being reset after ENDLOCAL
 REM also modify below the extensions shown in console. (By default: exe bat cmd vbs)
@@ -235,7 +207,7 @@ REM set the PATH from temp file after ENDLOCAL.
 
 for /f "usebackq delims=*" %%k in ("%temp%\tempPath.tmp") do PATH=%%k
 echo.
-echo # To add an executable, put in "Exe"; to query folders, dirc /? or listc /?
+echo # To add executables, put in 'Exe'; to query contents, dirc /? or listc /?
 echo.
 
 :end
