@@ -194,7 +194,7 @@ REM also modify below the extensions shown in console. (By default: exe bat cmd 
 
 REM remove the \ and add ; at the end of PATH to accommodate if the last PATH has space
 
-  echo %path:~0,-1%; > "%temp%\tempPath.tmp"
+  echo %path%; > "%temp%\tempPath.tmp"
   for %%i in (*.exe *.bat *.cmd *.vbs) do set custom=!custom!%%~nxi, 
   set custom=%custom%
 
