@@ -7,16 +7,16 @@ Download the latest release at Microsoft TechNet Gallery:
 
 ## The Need to More Easily Execute Utilities within a Portable Collection
 
-Do you use a lot of command line tools in your USB flash drive?
+Do you use a lot of command line tools in your USB flash drive or cloud drive?
 
  ![](https://1.bp.blogspot.com/_Rn_IR-WNJ-M/Srgz4br9cYI/AAAAAAAAAQ8/m-C8_WNn28I/s1600/cmd1a.png "")
 
-So, as an PC enthusiast, you probably have got a bunch of useful command line tools with you on the go. To use them, you first insert your USB flash drive, start the command prompt on the target computer, navigate to your drive, then find out where your program is, &#39;_cd_&#39; to it and finally start it. However, you&#39;re always using them, and as the list of executables and subfolders grows, you start to wonder whether there&#39;s an easier way. Enhanced Command Prompt Portable (ECPP) to the rescue!
+So, as an PC enthusiast, you probably have got a bunch of useful command line tools with you on the go. To use them, you first insert your USB flash drive (or establish cloud drive), start the command prompt on the target computer, navigate to your drive, then find out where your program is, &#39;_cd_&#39; to it and finally start it. However, you&#39;re always using them, and as the list of executables and subfolders grows, you start to wonder whether there&#39;s an easier way. Enhanced Command Prompt Portable (ECPP) to the rescue!
 
 ## List of Features
 
 - Easily execute utilities within a portable collection by directly entering names or commands of the executables in Enhanced Command Prompt Portable (ECPP), eliminating the need to locate them or memorize where they are deep in the folder hierarchy
-- Displays a list of command line executables and folders placed inside &quot;CommandPromptPortable\Exe\&quot; in the USB drive
+- Displays a list of command line executables and folders placed inside &quot;CommandPromptPortable\Exe\&quot; in the USB drive (or cloud drive)
 - Top-most executables are listed as file1.exe, file2.bat; folders are listed as [Folder1], [Folder2]...
 - PATH variable is automatically and dynamically updated on each run to detect new executables. (Alternatively, reload Command Prompt anytime by entering &quot;commandprompt&quot;)
 - Only folders with executables are appended to PATH to save space (configurable)
@@ -28,7 +28,7 @@ So, as an PC enthusiast, you probably have got a bunch of useful command line to
 
 ## Concept of ECPP – Enhanced Command Prompt Portable
 
-Command Prompt Portable is another portable software from PortableApps.com. It provides us with a command prompt we can customize the way we want. One of the most useful customization is setting PATH to whatever locations we need. We simply edit a batch file called commandprompt.bat inside &quot;CommandPromptPortable\Data\Batch&quot; and set PATH to e.g. &quot;_%~d0\[folder\_hierarchy]\Exe_&quot;, ... where we put our executables. &quot;_%~d0_&quot; will become the root of the USB drive automatically. Then we can use our commands right after we&#39;ve opened Command Prompt Portable, no matter at which PC! So, insteading of getting frustrated with target computer&#39;s command prompt, we can actually bring our own and have our settings on the go.
+Command Prompt Portable is another portable software from PortableApps.com. It provides us with a command prompt we can customize the way we want. One of the most useful customization is setting PATH to whatever locations we need. We simply edit a batch file called commandprompt.bat inside &quot;CommandPromptPortable\Data\Batch&quot; and set PATH to e.g. &quot;_%~d0\[folder\_hierarchy]\Exe_&quot;, ... where we put our executables. &quot;_%~d0_&quot; will become the root of the USB drive (or cloud drive) automatically. Then we can use our commands right after we&#39;ve opened Command Prompt Portable, no matter at which PC! So, insteading of getting frustrated with target computer&#39;s command prompt, we can actually bring our own and have our settings on the go.
 
 To go further, here&#39;s my customized take, known as Enhanced Command Prompt Portable (ECPP), with PStart as a launcher.
 
