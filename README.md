@@ -2,9 +2,6 @@
 
 Based on Command Prompt Portable, ECPP enables PC enthusiasts, who bring a lot of portable utilities with them on a flash drive, to easily execute them by names or commands from a consolidated console without the need to remember where they are deep in the folder hierarchy.
 
-Download the latest release at Microsoft TechNet Gallery:
-- https://gallery.technet.microsoft.com/Enhanced-Command-Prompt-a82a96a9
-
 ## The Need to More Easily Execute Utilities within a Portable Collection
 
 Do you use a lot of command line tools in your USB flash drive or cloud drive?
