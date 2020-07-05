@@ -1,14 +1,20 @@
 
-  Enhanced Command Prompt Portable | v1.2a | 5/1/2011 
+  Enhanced Command Prompt Portable | TBC | 4 July 2020 
   (Scripts: CommandPrompt.bat, DirC.bat, ListC.bat)
   
-  by wanderSick@C7PE
-  Email: wander.sic.k@gmail.com | Web: wandersick.blogspot.com
-      
-  Supports Windows 2000 or later
+  By wandersick
+  Email: wandersick@gmail.com | Web: tech.wandersick.com
+
+  Supports Windows 2000 and later
+
+  Based on Command Prompt Portable from PortableApps.com (GPL v2)
   ________________________________________________________________
   
   Updates:
+
+  #  2020/07/05 - TBC
+
+  - Information update
 
   #  2011/01/05 - 1.2a
 
@@ -24,12 +30,6 @@
     uses another dupe removal algorithm which is much faster. Now
     having a lot of useless folders won't fill up PATH too soon.
   - Improved codecs.
-  ________________________________________________________________
-  
-  Words for Chinese users:
-  
-  ¦p»Ý­n¤¤¤å¤¶­±¡A½Ð¸ÑÀ£ Data\Batch\chinese.zip ¨Ã¨ú¥N²{¦³ÀÉ®×¡C
-  («ØÄ³¨Ï¥Î­^¤åª©¡A¦]¬°¤¤¤å¦r¦b­^¤å Windows ¤U¥i¯àÅÜ¦¨¶Ã½X¡C)
   ________________________________________________________________
 
   Readme for CommandPrompt.bat: 
@@ -53,21 +53,22 @@
 
   Required folder structures: 
 
-  "Command Prompt Portable"
-       ¢x  
-       ¢x  CommandPromptPortable.exe
-       ¢x  
-       ¢u¢wData
-       ¢x  ¢|¢wBatch
-       ¢x          commandprompt.bat
-       ¢x          dirc.bat
-       ¢x          listc.bat
-       ¢u¢wExe
-       ¢x  ¢u¢wMicrosoft (example)
-       ¢x  ¢u¢wUnxUtils (example)
-       ¢x  ¢x  ¢u¢w...  
-       ¢x  ¢x  ¢|¢w...  
-       ¢x  ¢x      ¢|¢w...
+  "Command Prompt Portable" (base folder)
+       |  
+       |  CommandPromptPortable.exe
+       |  
+       â”œâ”€â”€â”€ Data
+       |     â””â”€â”€â”€ Batch
+       |           â””â”€â”€â”€ commandprompt.bat
+       |                dirc.bat
+       |                listc.bat
+       â”œâ”€â”€â”€ Exe
+       |     â”œâ”€â”€â”€ addswap.exe... (example)
+       |     |
+       |     â”œâ”€â”€â”€ Microsoft (example)
+       |     â””â”€â”€â”€ UnxUtils (example)
+       |           â””â”€â”€â”€...  
+       |                â””â”€â”€â”€...  
 
   'Command Prompt Portable' -- the base folder (can be anywhere)
   '\Data\Batch' -- where batches reside: commandprompt, dirc, listc
@@ -206,6 +207,6 @@
 
   ________________________________________________________________
   
-  If you have any comments, please email to wander.sic.k@gmail.com, or reply
-  wandersick.blogspot.com/2009/09/my-customized-command-prompt-portable.html
+  If you have any comments, please email to wandersick@gmail.com, or reply
+  tech.wandersick.com/2009/09/my-customized-command-prompt-portable.html
   

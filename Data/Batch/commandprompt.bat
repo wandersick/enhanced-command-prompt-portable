@@ -6,8 +6,8 @@ rem Scripts: *CommandPrompt.bat*, DirC.bat, ListC.bat
 rem Creation Date: 27/7/2009
 rem Last Modified: 21/9/2009,3/1/2010
 rem Author: wandersick
-rem Email: wander.sic.k@gmail.com
-rem Web: wandersick.blogspot.com
+rem Email: wandersick@gmail.com
+rem Web: tech.wandersick.com
 rem Supported OS: Windows 2000 or later
 rem ************************
 rem Description: See "commandprompt.bat /?"
@@ -51,20 +51,20 @@ ECHO.
 ECHO  Required folder structures: 
 ECHO.
 ECHO  "Command Prompt Portable"
-ECHO       ¢x  
-ECHO       ¢x  CommandPromptPortable.exe
-ECHO       ¢x  
-ECHO       ¢u¢wData
-ECHO       ¢x  ¢|¢wBatch
-ECHO       ¢x          commandprompt.bat
-ECHO       ¢x          dirc.bat
-ECHO       ¢x          listc.bat
-ECHO       ¢u¢wExe
-ECHO       ¢x  ¢u¢wMicrosoft (example)
-ECHO       ¢x  ¢u¢wUnxUtils (example)
-ECHO       ¢x  ¢x  ¢u¢w...  
-ECHO       ¢x  ¢x  ¢|¢w...  
-ECHO       ¢x  ¢x      ¢|¢w...
+ECHO       ï¿½x  
+ECHO       ï¿½x  CommandPromptPortable.exe
+ECHO       ï¿½x  
+ECHO       ï¿½uï¿½wData
+ECHO       ï¿½x  ï¿½|ï¿½wBatch
+ECHO       ï¿½x          commandprompt.bat
+ECHO       ï¿½x          dirc.bat
+ECHO       ï¿½x          listc.bat
+ECHO       ï¿½uï¿½wExe
+ECHO       ï¿½x  ï¿½uï¿½wMicrosoft (example)
+ECHO       ï¿½x  ï¿½uï¿½wUnxUtils (example)
+ECHO       ï¿½x  ï¿½x  ï¿½uï¿½w...  
+ECHO       ï¿½x  ï¿½x  ï¿½|ï¿½w...  
+ECHO       ï¿½x  ï¿½x      ï¿½|ï¿½w...
 ECHO.
 ECHO  'Command Prompt Portable' -- the base folder (can be anywhere)
 ECHO  '\Data\Batch' -- where batches reside: commandprompt, dirc, listc

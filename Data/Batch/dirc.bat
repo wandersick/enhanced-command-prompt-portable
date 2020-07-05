@@ -8,7 +8,7 @@
 :: Last Modified: 25/12/2009
 :: Author: wandersick
 :: Email: wandersick@gmail.com
-:: Web: wandersick.blogspot.com
+:: Web: tech.wandersick.com
 :: Supported OS: Windows 2000 or later
 :: *********************************************************
 :: Description: use with commandprompt.bat. see "dirc /?"

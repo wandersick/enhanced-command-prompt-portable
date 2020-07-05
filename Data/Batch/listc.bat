@@ -12,7 +12,7 @@
 :: Last Modified: 2/11/2009
 :: Author: wandersick
 :: Email: wandersick@gmail.com
-:: Web: wandersick.blogspot.com
+:: Web: tech.wandersick.com
 :: Supported OS: Windows 2000 or later
 :: ******************************************************
 :: Description: use with commandprompt.bat. see "listc /?"
